@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jaswanthk.traceit.RouteActivity">
+
+    <RelativeLayout
+        android:layout_width="398dp"
+        android:layout_height="536dp"
+        tools:ignore="MissingConstraints,UselessLeaf"
+        tools:layout_editor_absoluteX="-19dp"
+        tools:layout_editor_absoluteY="-13dp">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:gravity="center"
+            android:text="Enter RouteNo"
+            android:textSize="15dp"
+            tools:ignore="HardcodedText,SpUsage"
+            android:layout_above="@+id/txt2"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="57dp" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Starting Point"
+            tools:ignore="HardcodedText"
+            android:layout_alignBaseline="@+id/rname"
+            android:layout_alignBottom="@+id/rname"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="28dp" />
+
+        <EditText
+            android:id="@+id/rname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="THIRUVALLUR"
+            android:inputType="textPersonName"
+            android:text=""
+            tools:ignore="HardcodedText,LabelFor"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/txt2"
+            android:layout_marginStart="9dp" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txt1"
+            android:layout_below="@+id/rname"
+            android:layout_marginStart="71dp"
+            android:layout_marginTop="74dp"
+            android:text="ADD AS NEW ROUTE"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/rno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txt1"
+            android:layout_alignBottom="@+id/txt1"
+            android:layout_alignStart="@+id/rname"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="60"
+
+            android:text=""
+            tools:ignore="HardcodedText,LabelFor" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
